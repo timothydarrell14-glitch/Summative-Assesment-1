@@ -8,7 +8,6 @@ body{
     background-color: #1E2020;
     line-height: 1.6;
     padding-top: 10px;
-    overflow-y: hidden;
 }
 
 header{
@@ -151,4 +150,90 @@ h3{
     justify-content: center;
     text-decoration: underline;
     font-size: 40px;
+}
+
+@media screen and (max-width: 1300px){
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 1250px){
+    .hero{
+        display: grid;
+        grid-template-columns: 0.8fr 0.5fr;
+        justify-content: space-between;
+    }
+    h1{
+        padding-top: 150px;
+        display: flex;
+        justify-content: center;
+    }
+    .hero div p{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-right:  20px;
+}
+}
+
+@media screen and (max-width: 1050px){
+    .hero{
+        display: grid;
+        grid-template-columns: 0.5fr 0.4fr;
+        justify-content: space-between;
+    }
+    h1{
+        padding-top: 130px;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .hero{
+        display: grid;
+        grid-template-columns: 0.3fr 0.3fr;
+    }
+    .hero div p{
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+    h1{
+        padding-top: 0px;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        padding-right: 100px;
+    }
+
+}
+
+@media screen and (max-width: 920px){
+    .hero div p{
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+    h1{
+        padding-left: 40px;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        padding-right: 80px;
+        padding-left: 50px;
+    }
 }
